@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  @font-face {
+    font-family: 'cassandra';
+    src: url('fontes/cassandra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'fragment';
+      src: url('fontes/fragment.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'bebas';
+        src: url('fontes/BebasNeue.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+  
+.container {
+  background-image: url('imagens/background.png');
+  background-size: cover;
+  background-attachment: scroll;
+  height: 170px;
+  position: relative;
+}
+
+.titulo {
+  font-family: 'cassandra';
+  text-align: center;
+  color: rgb(71, 71, 58);
+  text-shadow: 2px 2px 2px rgba(215, 247, 6, 0.24);
+  
+}
+
+.sub {
+  font-family: 'fragment';
+  text-align: center;
+  font-size:1em;
+  padding-bottom: 20px;
+}
+
+nav {
+  
+  mask-image: linear-gradient(90deg, rgb(169, 172, 155) 0%, #ffffff 25%, #ffffff 75%, rgb(168, 163, 89) 100%);
+  margin: 0 auto;
+  padding: 0px 0;
+  height:50px;
+  
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 12px;
+  font-family: "fragment";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  font-weight: bolder;
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+main {
+  margin:auto;
+  padding:15px;
+  max-width: 1000px;
+  min-width: 360px; 
+}
+
+section{
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+section > h1 {
+  font-family: 'fragment';
+  font-size:2em;
+  color:rgb(23, 22, 22);
+}
+
+section > p {
+  margin-top:20px;
+  text-indent: 30px;
+  text-align:justify;
+}
